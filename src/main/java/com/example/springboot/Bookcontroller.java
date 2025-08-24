@@ -17,10 +17,12 @@ public class Bookcontroller {
         return bookService.getAll();
     }
 
+
     @GetMapping("/{id}")
     public Book getbook(@PathVariable int id){
         return bookService.getBook(id);
     }
+
 
     @PostMapping
     public String addbook(@RequestBody Book book){
